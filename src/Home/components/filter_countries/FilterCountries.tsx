@@ -42,7 +42,7 @@ export default function FilterCountries({ data }: Places) {
             <FlatList
                 data={countriesList}
                 renderItem={({item, index}) => {
-                    return <Text>{1+index } {item.name}</Text>
+                    return <CountrieItem data={item} position={1+index}/>
                 }}
             />
         </FilterContainer>
