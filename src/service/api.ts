@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 
-const token = 'TOKEN HERE'
+const token = 'YOUR TOKEN HERE'
 const baseURL = 'https://coronavirus.app/';
 
 const instance = axios.create({
