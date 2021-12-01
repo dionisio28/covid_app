@@ -18,7 +18,7 @@ const OverviewProvider: React.FC = ({ children }) => {
         setPlaces(response.data);
       }
     } catch (error) {
-        //MAKE SNACK
+      //TODO MAKE SOME TOAST
     } finally {
       setIsLoading(false);
     }

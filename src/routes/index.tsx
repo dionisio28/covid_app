@@ -1,14 +1,12 @@
 import * as React from "react";
-import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../Home";
 import RouteNames from "./routes.contants";
 import DetailScreen from "../Detail/DetailScreen";
 const Stack = createNativeStackNavigator();
 
-export default function RootNavigation() {
+export default function Routes() {
   return (
-    <NavigationContainer>
       <Stack.Navigator initialRouteName={RouteNames.HOME_SCREEN}>
         <Stack.Screen
           options={{ title: "Coronavirus Status" }}
@@ -20,6 +18,5 @@ export default function RootNavigation() {
           component={DetailScreen}
         />
       </Stack.Navigator>
-    </NavigationContainer>
   );
 }
