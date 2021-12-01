@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ItemCovid from '../../components/ItemCovid/ItemCovid'
+import { ItemCovid } from '../../components';
 import { Places } from '../../types/Places.type'
 import { Container, RowContainer } from './styles_components'
-
-
-
-
-
 
 export default function SummaryHeader({ data }: Places) {
     const [infected, setInfected] = useState('');
@@ -41,12 +36,12 @@ export default function SummaryHeader({ data }: Places) {
     return (
         <Container>
             <RowContainer>
-                <ItemCovid primary title={'Casos Confirmados'} description={infected} />
-                <ItemCovid title={'Pessoas Vacinadas'} description={vaccinated} />
+                <ItemCovid primary title={'Total cases'} description={infected} />
+                <ItemCovid title={'People vaccinated'} description={vaccinated} />
             </RowContainer>
             <RowContainer>
-                <ItemCovid title={'Óbitos'} description={dead} />
-                <ItemCovid title={'Recuperados'} description={recovered} />
+                <ItemCovid title={'Deaths'} description={dead} />
+                <ItemCovid title={'Recoveries'} description={recovered} />
             </RowContainer>
         </Container>
     )

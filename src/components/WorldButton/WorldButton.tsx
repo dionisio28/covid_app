@@ -11,7 +11,7 @@ export default function WorldButton({ onPress }: WorldButtonProps) {
         <TouchableRow onPress={onPress}>
             <Fontisto name="world-o" size={30} />
             <SizedBox />
-            <Title>Resumo do mundo</Title>
+            <Title>World Overview</Title>
         </TouchableRow>
     )
 }

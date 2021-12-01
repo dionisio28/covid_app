@@ -9,7 +9,7 @@ interface InputTextProps {
   value: string;
 }
 
-export default function InputText({ onChange, placeholder = "Buscar região", value }: InputTextProps) {
+export default function InputText({ onChange, placeholder = "Search regions...", value }: InputTextProps) {
   return (
     <RowInputContainer>
       <SizedBox />

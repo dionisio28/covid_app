@@ -9,7 +9,7 @@ export const Container = styled.View`
   padding: 12px;
 `;
 
-export const FilterContainer = styled.View`
+export const FilterContainer = styled.KeyboardAvoidingView`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
