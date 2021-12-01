@@ -3,7 +3,7 @@ import { getPlaces } from "../service";
 import OverviewContextProps from "../types/Overview.type";
 import { Places } from "../types/Places.type";
 
-const OverviewContext = createContext<OverviewContextProps>(
+export const OverviewContext = createContext<OverviewContextProps>(
   {} as OverviewContextProps
 );
 
